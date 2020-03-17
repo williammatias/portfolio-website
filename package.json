@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "This is the repo for the website hosted on williammatias.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williammatias/portfolio-website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "gulp",
+    "html",
+    "css",
+    "javascript",
+    "front-end"
+  ],
+  "author": "William Matias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williammatias/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/williammatias/portfolio-website#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0"
+  }
+}
