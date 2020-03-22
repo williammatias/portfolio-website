@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "reset.scss";
+@import "color.scss";
+@import "mixin.scss";
+@import "timeline.scss";
+
+// colors
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-container {
+  font-family: "Roboto", sans-serif;
+  line-height: 20px;
+}
+
+.main-header {
+  &__navigation {
+    @extend .container;
+    padding: 20px 15px;
+    &__logo {
+      font-family: "Permanent Marker", cursive;
+      font-size: 34px;
+      color: $primary;
+    }
+  }
+}

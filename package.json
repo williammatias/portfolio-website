@@ -25,7 +25,13 @@
   },
   "homepage": "https://github.com/williammatias/portfolio-website#readme",
   "devDependencies": {
+    "fancy-log": "^1.3.3",
     "gulp": "^4.0.2",
-    "gulp-connect": "^5.7.0"
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-if": "^3.0.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
   }
 }
