@@ -6,7 +6,7 @@
 @import "timeline.scss";
 
 // colors
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
 }
@@ -20,10 +20,22 @@
   &__navigation {
     @extend .container;
     padding: 20px 15px;
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
     &__logo {
       font-family: "Permanent Marker", cursive;
       font-size: 34px;
       color: $primary;
+      z-index: 2;
+    }
+    &__social {
+      font-size: 30px;
+      a {
+        text-decoration: none;
+        margin-right: 20px;
+        color: $primary;
+      }
     }
   }
 }

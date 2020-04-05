@@ -8,7 +8,7 @@ sass.compiler = require("node-sass");
 
 let env, jsSources, sassSources, outputDir = 'build';
 
-env = process.env.NODE_ENV || "development";
+env = "production";
 
 
 sassSources = ["src/assets/scss/style.scss"];
@@ -34,7 +34,8 @@ task("html", function() {
 
 task("scss", function() {
   return src(sassSources)
-    .pipe(sass().on("error", log))
+    .pipe(gulpif(env !== "production", sass().on('error', log)))
+    .pipe(gulpif(env === "production", sass({outputStyle: 'compressed'}).on('error', log)))
     .pipe(dest(outputDir + "/css"))
     .pipe(connect.reload());
 });
